@@ -16,19 +16,37 @@
 
   <header>
     <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="./assets/images/logo.svg" alt="snap's logo">
+      </div> <!-- navbar__menu -->
 
       <div class="navbar__menu">
-        <div class="navbar__logo">
-          <img src="./assets/images/logo.svg" alt="snap's logo">
-        </div> <!-- navbar__menu -->
 
         <div class="navbar__menu--mobile">
           <img src="./assets/images/icon-menu.svg" alt="">
         </div>
 
         <div class="navbar__links">
-          <a href="#" class="arrow">Features</a>
-          <a href="#" class="arrow">Company</a>
+          <div class="navbar__links--especial">
+            <a href="#" class="arrow-down-feature">Features<span><img src="./assets/images/icon-arrow-down.svg" class="arrow-img-feature"></span></a>
+            <ul class="mini__menu-feature">
+              <li><img src="./assets/images/icon-todo.svg" alt="">To Do List</li>
+              <li><img src="./assets/images/icon-calendar.svg" alt="">Calendar</li>
+              <li><img src="./assets/images/icon-reminders.svg" alt="">Reminders</li>
+              <li><img src="./assets/images/icon-planning.svg" alt="">Planners</li>
+            </ul> <!-- features__menu -->
+          </div> <!-- navbar__links--especial -->
+          
+          <div class="navbar__links--especial">
+            <a href="#" class="arrow-down-company arrow-up-feature">Company<span><img src="./assets/images/icon-arrow-down.svg" class="arrow-img-company"></span></a>
+            <ul class="mini__menu-company">
+              <li>History</li>
+              <li>Our team</li>
+              <li>Blog</li>
+              <li class="invisible">invisible</li>
+            </ul> <!-- __menu -->
+          </div> <!-- navbar__links--especial -->
+
           <a href="#">Careers</a>
           <a href="#">About</a>
         </div> <!-- navbar__links -->
@@ -44,20 +62,23 @@
   <main>
 
     <div class="main__content">
-      <h1>Make remote work</h1>
+      <h1>Make <br> remote work</h1>
       <p>
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
       </p>
-      <button class="button learn-more">Learn more</button>
+      <button class="button-learn-more">Learn more</button>
 
       <div class="footer__imgs--main">
-          
+          <img src="./assets/images/client-databiz.svg" alt="">
+          <img src="./assets/images/client-audiophile.svg" alt="">
+          <img src="./assets/images/client-meet.svg" alt="">
+          <img src="./assets/images/client-maker.svg" alt="">
       </div> <!-- footer__img--main -->
     </div> <!-- main__content -->
 
     <div class="main__img">
-      <img src="./assets/images/image-hero-desktop.png" alt="">
+      <img src="./assets/images/image-hero-desktop.png" alt="" class="img-desktop">
     </div>
 
   </main>
@@ -73,5 +94,7 @@
     </div> <!-- attribution -->
 
   </footer> <!-- footer -->
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
