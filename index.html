@@ -15,18 +15,29 @@
 <body>
 
   <header>
-    <nav class="navbar">
-      <div class="navbar__logo">
+    <nav class="navbar__mobile">
+      <div class="navbar__logo--mobile ">
         <img src="./assets/images/logo.svg" alt="snap's logo">
-      </div> <!-- navbar__menu -->
+      </div> <!-- navbar__logo--mobile -->
+
+      <div class="navbar__menu--mobile">
+        <span id="open-menu-icon"><img src="./assets/images/icon-menu.svg" alt=""></span>
+      </div> <!-- navbar__menu--mobile -->
+    </nav> <!-- navbar__mobile -->
+   
+    <nav class="navbar"> <!-- desktop -->
+
+      
+      <div class="navbar__logo ">
+        <img src="./assets/images/logo.svg" alt="snap's logo">
+      </div> <!-- navbar__logo -->
+
+      <span id="close-menu-icon"><img src="./assets/images/icon-close-menu.svg" alt=""></span>
 
       <div class="navbar__menu">
 
-        <div class="navbar__menu--mobile">
-          <img src="./assets/images/icon-menu.svg" alt="">
-        </div>
-
         <div class="navbar__links">
+          
           <div class="navbar__links--especial">
             <a href="#" class="arrow-down-feature">Features<span><img src="./assets/images/icon-arrow-down.svg" class="arrow-img-feature"></span></a>
             <ul class="mini__menu-feature">
@@ -56,6 +67,7 @@
         <a href="#" class="login">Login</a>
         <a href="#" class="register">Register</a>
       </div> <!-- navbar__buttons -->
+
     </nav> <!-- navbar -->
   </header>
 
@@ -79,6 +91,7 @@
 
     <div class="main__img">
       <img src="./assets/images/image-hero-desktop.png" alt="" class="img-desktop">
+      <img src="./assets/images/image-hero-mobile.png" alt="" class="img-mobile">
     </div>
 
   </main>

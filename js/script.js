@@ -6,6 +6,10 @@ const companyLink = document.querySelector('a.arrow-down-company');
 const menuCompany = document.querySelector('ul.mini__menu-company');
 const companyImg = document.querySelector('.arrow-img-company')
 
+const menu = document.querySelector('nav.navbar');
+const openMenu = document.querySelector('span#open-menu-icon');
+const closeMenu = document.querySelector('span#close-menu-icon');
+
 featureLink.addEventListener("click", () => {
   menuFeature.classList.toggle('active');
   if (menuFeature.classList[1] === 'active') {
@@ -25,5 +29,9 @@ companyLink.addEventListener("click", () => {
   }
 });
 
-
-//ainda falta mudar icone de seta para baixo para seta para cima 
+openMenu.addEventListener('click', () => {
+    menu.style.right = 0;
+  });
+closeMenu.addEventListener('click', () => {
+    menu.style.right = '-100vw';
+  });
