@@ -269,7 +269,7 @@ main {
   
   header .navbar {
     position: fixed;
-    right: 0;
+    right: -100vw;
     top: 0;
 
     width: 70vw;
