@@ -24,25 +24,26 @@ body {
 header .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  column-gap: 1rem;
+  align-items: center;
 
-  padding: 1.25rem;
+  padding: 1rem 0.5rem;
+
+  transition: all .5s ease-in-out
 }
 
 .navbar__logo {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding-top: .5rem;
+  margin-left: 1rem;
 }
 
 .navbar__menu {
   width: 50%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-
-  padding-top: 1rem;
+  
+  transition: all .5s ease-in-out
 }
 
 .navbar__menu .navbar__links {
@@ -50,12 +51,16 @@ header .navbar {
   justify-content: space-evenly;
 
   transition: all .5 ease-in-out;
+
+  margin-left: 1.5rem;
 }
 
 .navbar__menu .navbar__links a {
   color: #727070;
 
   margin: 0 1rem;
+
+  transition: all .5s ease-in-out
 }
 
 .navbar__menu .navbar__links a:hover {
@@ -67,6 +72,8 @@ header .navbar {
 .arrow-img-feature,
 .arrow-img-company {
   margin-left: .8rem;
+
+  transition: all .5s ease-in-out
 }
 
 /* a outra forma de colocar as arrows ao lado dos links (ruim para mudar no JS)
@@ -95,7 +102,7 @@ header .navbar {
 
   background-color: white;
 
-  padding: 1rem;
+  padding: 1rem 0;
 
   transition: all .5s ease-in-out;
 }
@@ -107,7 +114,10 @@ header .navbar {
 
 .mini__menu-feature.active,
 .mini__menu-company.active {
-  display: block;
+  position: absolute;
+  top: 10%;
+
+  display: inline-block;
 
   transition: all .5s ease-in-out;
 }
@@ -148,7 +158,9 @@ header .navbar {
   border: 1px solid #1f1e1e;
   border-radius: 12px;
 
-  padding: 1rem;
+  padding: .7rem 1rem;
+
+  margin-left: 1.5rem;
 
   font-size: .9rem;
 }
@@ -211,6 +223,8 @@ main {
   font-weight: 500;
 
   cursor: pointer;
+
+  transition: all .3s ease-in-out;
 }
 
 .button-learn-more:hover {
@@ -269,7 +283,7 @@ main {
   
   header .navbar {
     position: fixed;
-    right: -100vw;
+    right: 0;
     top: 0;
 
     width: 70vw;
