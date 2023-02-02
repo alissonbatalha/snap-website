@@ -322,7 +322,14 @@ main {
 
   .mini__menu-feature.active,
   .mini__menu-company.active {
+    position: static;
+    top: 0;
+
     padding: 0;
+  }
+
+  .invisible {
+    display: none;
   }
 
   .mini__menu-feature.active li,
